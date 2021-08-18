@@ -1,0 +1,153 @@
+*{
+    transition: all 400ms;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.site-header__inner,
+.mission__inner,
+.products__inner,
+.team__inner {
+    max-width: 1120px;
+    width:100%;
+    margin:auto;
+} 
+.site-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.8)
+    
+}
+.site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+}
+.site-header nav{
+    margin: 0;
+    z-index: 9;
+}
+.site-header .main-nav ul{
+    list-style: none;
+    display: flex;
+
+}
+.site-header nav ul li{
+
+}
+.site-header nav ul li + li{
+    margin-left: 1em;
+}   
+.site-header nav ul li a{
+    color: white;
+}
+.site-header nav ul li a:hover{
+    text-decoration: none;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero::before{
+    content:"";
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+.hero h1{
+    font-size: 4rem;
+    color: white;
+    z-index: 9;
+}
+
+.mission {
+    background-color: #fafafa;
+    padding: 100px;
+}
+
+.mission__inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products {
+    padding: 100px 0;
+}
+
+.products__inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products__inner ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__inner ul li{
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+}
+
+.products__inner ul li h3{
+    text-align: center;
+}
+
+
+.team {
+    padding: 100px 0;
+    background-color: #fafafa; 
+}
+
+.team__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__inner ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.team__inner ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team__inner ul li h3{
+    text-align: center;
+}
+
+.site-footer {
+    padding: 50px 0;
+    background-color: #333;
+    color:  white;
+}
+.site-footer p{
+    text-align: center;
+    color:  white;
+}
